@@ -1,0 +1,32 @@
+.header>p {
+    margin: 0px;
+    padding: 1rem;
+}
+
+.card-action {
+    color: brown;
+}
+
+/*.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+/* BACKGROUND IMAGES*/
+/*END OF BACKGROUND IMAGES */
+
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+}
