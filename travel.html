@@ -12,26 +12,35 @@
 </head>
 
 <body>
-    <!-- Heading Part -->
-
-    <div class="navbar-fixed">
-        <!-- Navigation Part -->
-        <nav class="#e53935 red darken-1">
-            <div class=" nav-wrapper">
-                <a href="#" class="brand-logo"><img height="30px" src="./image/logo.png" alt="Blog-logo"></a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="travel.html">Travel</a></li>
-                    <li><a href="eat.html">Eat</a></li>
-                    <li><a href="relax.html">Relax</a></li>
-                    <li><a href="videos.html">Videos</a></li>
-                    <li><a href="search.html"><i class="material-icons">search</i></a></li>
-                </ul>
-            </div>
-    </div>
+    <!-- Nav -->
+    <nav>
+        <div class="nav-wrapper red">
+            <a href="#" class="brand-logo"><img height="30px" src="./image/logo.png" alt="Blog-logo"></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="travel.html">Travel</a></li>
+                <li><a href="eat.html">Eat</a></li>
+                <li><a href="relax.html">Relax</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="#"><i class="material-icons">search</i></a></li>
+            </ul>
+        </div>
     </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="travel.html">Travel</a></li>
+        <li><a href="eat.html">Eat</a></li>
+        <li><a href="relax.html">Relax</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="#"><i class="material-icons">search</i></a></li>
+    </ul>
+    <!-- End of Nav -->
 
     <!---Travel-->
     <div class="container">
@@ -48,33 +57,44 @@
         <article>
             <h2>Chinnaswamy Stadium</h2>
             <img src="./image/cs_stadium.jpg" style="width: 100vh; height: 50vh; border: 5px solid #555;">
-            <p>The <b>M. Chinnaswamy Stadium</b> (formerly known as the Karnataka State Cricket Association Stadium) is
+            <p>The <b>M. Chinnaswamy Stadium</b> (formerly known as the Karnataka State Cricket Association Stadium)
+                is
                 a
                 cricket
-                stadium located in Bangalore, Karnataka. Flanked by the picturesque Cubbon Park, Queen's Road, Cubbon
+                stadium located in Bangalore, Karnataka. Flanked by the picturesque Cubbon Park, Queen's Road,
+                Cubbon
                 and
-                uptown MG Road, this five-decade-old stadium is situated in the heart of the city of Bangalore It has a
+                uptown MG Road, this five-decade-old stadium is situated in the heart of the city of Bangalore It
+                has a
                 seating capacity of 40,000, and regularly hosts Test cricket, One Day Internationals (ODI), Twenty20
-                Internationals (T20i) and other First-class cricket matches, as well as musical and cultural events. The
-                stadium is the home ground of the Karnataka state cricket team and the Indian Premier League franchise
+                Internationals (T20i) and other First-class cricket matches, as well as musical and cultural events.
+                The
+                stadium is the home ground of the Karnataka state cricket team and the Indian Premier League
+                franchise
                 Royal
                 Challengers Bangalore. It is owned by the Government of Karnataka and has been leased out to the
                 Karnataka
                 State Cricket Association (KSCA) for a period of 100 years. <br><br>
 
-                Formerly known as the Karnataka State Cricket Association Stadium, it was later rechristened in tribute
+                Formerly known as the Karnataka State Cricket Association Stadium, it was later rechristened in
+                tribute
                 to
                 Mangalam Chinnaswamy, a lawyer from Mandya and the founding member of the Mysore State Cricket
                 Association. He served the KSCA for four decades and was also president of the Board of Control for
                 Cricket in India (BCCI) from 1977–1980. <br><br>
 
-                It is the first cricket stadium in the world to use solar panels to generate a bulk of the electricity
-                needed to run the stadium. This has been procured as by the "Go Green" initiative of the KSCA. <br><br>
+                It is the first cricket stadium in the world to use solar panels to generate a bulk of the
+                electricity
+                needed to run the stadium. This has been procured as by the "Go Green" initiative of the KSCA.
+                <br><br>
 
-                With generous patronage from the Government of Karnataka, the foundation stone of this stadium was laid
+                With generous patronage from the Government of Karnataka, the foundation stone of this stadium was
+                laid
                 in
-                1969 and construction work commenced in 1970. The stadium was first used for First-class cricket matches
-                during the 1972–73 season. It earned test status during the 1974–75 season when the West Indies toured
+                1969 and construction work commenced in 1970. The stadium was first used for First-class cricket
+                matches
+                during the 1972–73 season. It earned test status during the 1974–75 season when the West Indies
+                toured
                 India.
             </p>
         </article>
@@ -127,7 +147,7 @@
 
     <!-- Footer Part -->
     <!-- Footer -->
-    <footer class="page-footer">
+    <footer class="page-footer red">
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">
@@ -164,6 +184,12 @@
     </footer>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems, {});
+        });
+    </script>
 </body>
 
 </html>

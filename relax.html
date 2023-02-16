@@ -12,26 +12,35 @@
 </head>
 
 <body>
-    <!-- Heading Part -->
-
-    <div class="navbar-fixed">
-        <!-- Navigation Part -->
-        <nav class="#e53935 red darken-1">
-            <div class=" nav-wrapper">
-                <a href="#" class="brand-logo"><img height="30px" src="./image/logo.png" alt="Blog-logo"></a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="travel.html">Travel</a></li>
-                    <li><a href="eat.html">Eat</a></li>
-                    <li><a href="relax.html">Relax</a></li>
-                    <li><a href="videos.html">Videos</a></li>
-                    <li><a href="search.html"><i class="material-icons">search</i></a></li>
-                </ul>
-            </div>
-    </div>
+    <!-- Nav -->
+    <nav>
+        <div class="nav-wrapper red">
+            <a href="#" class="brand-logo"><img height="30px" src="./image/logo.png" alt="Blog-logo"></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="travel.html">Travel</a></li>
+                <li><a href="eat.html">Eat</a></li>
+                <li><a href="relax.html">Relax</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="#"><i class="material-icons">search</i></a></li>
+            </ul>
+        </div>
     </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="travel.html">Travel</a></li>
+        <li><a href="eat.html">Eat</a></li>
+        <li><a href="relax.html">Relax</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="#"><i class="material-icons">search</i></a></li>
+    </ul>
+    <!-- End of Nav -->
 
     <!---Relax-->
     <br><br><br>
@@ -149,7 +158,7 @@
 
     <!-- Footer Part -->
     <!-- Footer -->
-    <footer class="page-footer">
+    <footer class="page-footer red">
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">
@@ -186,6 +195,12 @@
     </footer>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems, {});
+        });
+    </script>
 </body>
 
 </html>
