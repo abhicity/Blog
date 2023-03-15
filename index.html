@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abhi iBlog</title>
-    <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./image/t_logo1.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
@@ -19,7 +19,7 @@
     <!-- Nav -->
     <nav>
         <div class="nav-wrapper red">
-            <a href="#" class="brand-logo"><img height="30px" src="./image/logo.png" alt="Blog-logo"></a>
+            <a href="#" class="brand-logo"><img height="30px" src="./image/t_logo1.png" alt="Blog-logo"></a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="index.html">Home</a></li>
@@ -29,7 +29,7 @@
                 <li><a href="eat.html">Eat</a></li>
                 <li><a href="relax.html">Relax</a></li>
                 <li><a href="videos.html">Videos</a></li>
-                <li><a href="#"><i class="material-icons">search</i></a></li>
+                <li><a href="search.html"><i class="material-icons">search</i></a></li>
             </ul>
         </div>
     </nav>
@@ -64,27 +64,27 @@
     </div>
     </nav>-->
 
-    <!---Main Content-->
 
-    <div class="container">
-        <br><br><br>
-        <img src="./image/main.jpg" style="width: 100%; height: 100%;">
-        <div class="centered">
-            <h1 style="font-size:50px"></h1>Welcome to Abhi iBlog</b></h1>
+    <!---Main Content-->
+    <!--Hero Image-->
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1>Welcome to Abhi iBlog</h1>
         </div>
     </div>
+    <!--End of Hero Image-->
 
 
     <br><br><br>
     <hr>
     <br><br><br>
 
-
     <div class="center">
-        <img src="./image/travel.jpg" style="width: 314px; height: 260px; object-fit: cover;">
-        <img src="./image/eat.jpg" style="width: 314px; height: 260px; object-fit: cover;">
-        <img src="./image/relax.jpg" style="width: 314px; height: 260px; object-fit: cover;">
+        <img src="./image/travel.jpg" alt="travel" style="width: 314px; height: 260px; object-fit: cover;">
+        <img src="./image/eat.jpg" alt="eat" style="width: 314px; height: 260px; object-fit: cover;">
+        <img src="./image/relax.jpg" alt="relax" style="width: 314px; height: 260px; object-fit: cover;">
     </div>
+
     <br><br><br>
     <hr>
     <br><br><br>
@@ -94,7 +94,7 @@
         <div class="col s12 m7">
             <div class="card">
                 <div class="card-image">
-                    <img src="./image/cs_stadium.jpg">
+                    <img src="./image/cs_stadium.jpg" alt="image">
                     <span class="card-title"><b>Chinnaswamy Stadium</b></span>
                 </div>
                 <div class="card-content">
@@ -115,7 +115,7 @@
         <div class="col s12 m7">
             <div class="card">
                 <div class="card-image">
-                    <img src="./image/1947_hotel.jpg">
+                    <img src="./image/1947_hotel.jpg" alt="image">
                     <span class="card-title"><b>1947 Restaurant</b></span>
                 </div>
                 <div class="card-content">
@@ -134,7 +134,7 @@
         <div class="col s12 m7">
             <div class="card">
                 <div class="card-image">
-                    <img src="./image/shiva.jpg">
+                    <img src="./image/shiva.jpg" alt="image">
                     <span class="card-title"><b>Shiva Temple Bengaluru</b></span>
                 </div>
                 <div class="card-content">
@@ -199,7 +199,7 @@
         <div class="col s12 m7">
             <div class="card">
                 <div class="card-image">
-                    <img src="./image/vidhanasoudha.jpg">
+                    <img src="./image/vidhanasoudha.jpg" alt="image">
                     <span class="card-title"><b>Vidhana Soudha Bengaluru</b></span>
                 </div>
                 <div class="card-content">
@@ -220,7 +220,7 @@
         <div class="col s12 m7">
             <div class="card">
                 <div class="card-image">
-                    <img src="./image/jamoon.jpg">
+                    <img src="./image/jamoon.jpg" alt="image">
                     <span class="card-title"><b>Desi Masala North Indian Restaurant in Banaswadi</b></span>
                 </div>
                 <div class="card-content">
@@ -256,7 +256,6 @@
                 <div class="col l4 offset-l2 s12">
                     <h5 class="white-text">SOCIALS</h5>
                     <ul>
-                        </ol>
                         <a href="https://www.facebook.com/profile.php?id=100070896248008&mibextid=ZbWKwL"
                             target="_blank"><img src="https://img.icons8.com/ios-glyphs/30/null/facebook-new.png"
                                 alt="Facebook"></a>
@@ -280,6 +279,7 @@
             </div>
         </div>
     </footer>
+    <!-- End of Footer -->
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
@@ -287,6 +287,7 @@
             var elems = document.querySelectorAll('.sidenav');
             var instances = M.Sidenav.init(elems, {});
         });
+
     </script>
 </body>
 
